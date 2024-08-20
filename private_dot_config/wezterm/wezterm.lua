@@ -7,6 +7,6 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 config.enable_scroll_bar = false
 config.enable_tab_bar = false
-config.enable_wayland = false
+config.enable_wayland = true
 -- and finally, return the configuration to wezterm
 return config
