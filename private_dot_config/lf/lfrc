@@ -21,9 +21,9 @@ set ifs "\n"
 set drawbox true
 # Enable icons.
 set icons true
-#Enable previews
+# Enable previews
 set preview true
-Enable sixel. This is required for the previewer script to work.
+# Enable sixel. This is required for the previewer script to work.
 set sixel
 set previewer /home/jonte/.config/lf/previewer
 # leave some space at the top and the bottom of the screen
