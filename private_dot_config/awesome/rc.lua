@@ -218,7 +218,8 @@ awful.screen.connect_for_each_screen(function(s)
             mytextclock,
             s.mylayoutbox,
         },
-    }
+
+}
 end)
 -- }}}
 
@@ -240,7 +241,6 @@ globalkeys = gears.table.join(
               {description = "view next", group = "tag"}),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
-
     awful.key({ modkey,           }, "j",
         function ()
             awful.client.focus.byidx( 1)
