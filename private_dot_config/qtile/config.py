@@ -166,7 +166,7 @@ screens = [
                 # widget.StatusNotifier(),
                 widget.Systray(),
                 widget.Net(interface="wlp2s0"),
-                widget.PulseVolume(volume_app "pavucontrol", volume_up_command "pactl set-sink-volume @DEFAULT_SINK@ +5%", volume_down_command = "pactl set-sink-volume @DEFAULT_SINK@ -5%", mute_command = "pactl set-sink-mute @DEFAULT_SINK@ toggle"),
+                widget.PulseVolume(volume_app "pavucontrol"),
                 widget.Battery(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 #widget.QuickExit(),
