@@ -30,7 +30,6 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
 mod = "mod4"
-alt = "mod2"
 #terminal = guess_terminal()
 terminal ="wezterm"
 keys = [
@@ -82,7 +81,7 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.widget['pulsevolume'].decrease_vol()),
     Key([], "XF86AudioRaiseVolume", lazy.widget['pulsevolume'].increase_vol()),
     Key([], "XF86AudioMute", lazy.widget['pulsevolume'].mute()),
-    Key([alt], "shift", lazy.widget["keyboardlayout"].next_keyboard(), desc="Next keyboard layout.") 
+    Key([mod2], "Return", lazy.widget["keyboardlayout"].next_keyboard(), desc="Next keyboard layout.") 
 ]
 
 # Add key bindings to switch VTs in Wayland.
