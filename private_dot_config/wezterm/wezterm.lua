@@ -4,10 +4,10 @@ local wezterm = require 'wezterm'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- This is where you actually apply your config choices
+-- This is where you actually specify your configuration options
 config.enable_scroll_bar = false
 config.enable_tab_bar = false
 config.enable_wayland = true
-config.window_background_opacity = 0.75
+config.window_background_opacity = 0.65
 -- and finally, return the configuration to wezterm
 return config
