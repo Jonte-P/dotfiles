@@ -163,8 +163,9 @@ screens = [
                 # widget.StatusNotifier(),
                 widget.Systray(),
                 widget.Net(interface="wlp2s0"),
+                widget.Battery(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.QuickExit(),
+                #widget.QuickExit(),
             ],
             24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
