@@ -81,7 +81,7 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.widget['pulsevolume'].decrease_vol()),
     Key([], "XF86AudioRaiseVolume", lazy.widget['pulsevolume'].increase_vol()),
     Key([], "XF86AudioMute", lazy.widget['pulsevolume'].mute()),
-    Key([mod2], "Return", lazy.widget["keyboardlayout"].next_keyboard(), desc="Next keyboard layout.") 
+    Key(["mod1"], "Return", lazy.widget["keyboardlayout"].next_keyboard(), desc="Next keyboard layout.") 
 ]
 
 # Add key bindings to switch VTs in Wayland.
