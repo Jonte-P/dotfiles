@@ -15,9 +15,7 @@ set shellopts '-eu'
 # since default file separator used in these variables (i.e. 'filesep' option)
 # is newline. You need to consider the values of these options and create your
 # commands accordingly.
-set ifs "\n"
-# Set some other things
-# Encase lf in a visual box.
+set ifs "\n" # Set some other things # Encase lf in a visual box.
 set drawbox true
 # Enable icons.
 set icons true
@@ -30,7 +28,7 @@ set previewer /home/jonte/.config/lf/previewer
 set scrolloff 10
 
 # Use the `dim` attribute instead of underline for the cursor in the preview pane
-set cursorpreviewfmt "\033[7;2m"
+#set cursorpreviewfmt "\033[7;2m"
 
 # use enter for shell commands
 map <enter> shell
