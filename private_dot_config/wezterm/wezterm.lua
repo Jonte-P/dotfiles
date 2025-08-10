@@ -8,6 +8,7 @@ local config = wezterm.config_builder()
 config.enable_scroll_bar = false
 config.enable_tab_bar = false
 config.enable_wayland = false
+config.front_end = "WebGpu"
 config.window_background_opacity = 0.75
 -- and finally, return the configuration to wezterm
 return config
