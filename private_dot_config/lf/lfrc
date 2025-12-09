@@ -22,8 +22,8 @@ set icons true
 # Enable previews
 set preview true
 # Enable sixel. This is required for the previewer script to work.
-set sixel
-set previewer /home/jonte/.config/lf/previewer
+#set sixel
+set previewer ~/.config/lf/previewer
 # leave some space at the top and the bottom of the screen
 set scrolloff 10
 
