@@ -7,5 +7,5 @@ run() {
   fi
 }
 run "/usr/bin/pipewire"
-setxkbmap -layout "us,ee,se" -option grp:alt_shift_toggle -option compose:rctrl 
-run "compton &"
+setxkbmap -layout "us,se,ee" -option grp:alt_shift_toggle -option compose:rctrl 
+run "/usr/bin/compton"
