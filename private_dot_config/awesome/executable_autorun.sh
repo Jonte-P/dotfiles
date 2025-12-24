@@ -7,3 +7,4 @@ run() {
   fi
 }
 run "pipewire &"
+run "compton &"
