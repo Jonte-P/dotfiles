@@ -6,5 +6,6 @@ run() {
     "$@"&
   fi
 }
-run "pipewire &"
+run "/usr/bin/pipewire"
+setxkbmap -layout "us,ee,se" -option grp:alt_shift_toggle -option compose:rctrl 
 run "compton &"
