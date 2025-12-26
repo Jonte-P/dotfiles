@@ -8,4 +8,6 @@ run() {
 }
 run "/usr/bin/pipewire"
 setxkbmap -layout "us,se,ee" -option grp:alt_shift_toggle -option compose:rctrl 
+xset b off
+nitrogen --restore
 run "/usr/bin/compton"
