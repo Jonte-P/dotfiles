@@ -28,7 +28,9 @@ from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
-
+import os
+import subprocess
+from libqtile import hook
 mod = "mod4"
 #terminal = guess_terminal()
 terminal ="wezterm"
@@ -83,7 +85,11 @@ keys = [
     Key([], "XF86AudioMute", lazy.widget['pulsevolume'].mute()),
     Key(["mod1"], "space", lazy.widget["keyboardlayout"].next_keyboard(), desc="Next keyboard layout.") 
 ]
-
+# Autostart
+@hook.subscribe.startup_once
+def autostart():
+    home = os.path.expanduser('~/.config/qtile/autostart.sh')
+    subprocess.call(home)
 # Add key bindings to switch VTs in Wayland.
 # We can't check qtile.core.name in default config as it is loaded before qtile is started
 # We therefore defer the check until the key binding is run by using .when(func=...)
