@@ -170,7 +170,7 @@ screens = [
                 widget.PulseVolume(volume_app="pavucontrol", volume_up_command = "pactl set-sink-volume @DEFAULT_SINK@ +5%", volume_down_command = "pactl set-sink-volume @DEFAULT_SINK@ -5%", mute_command="pactl set-sink-mute @DEFAULT_SINK@ toggle"),
                 widget.Battery(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.KeyboardLayout(configured_keyboards=['us','se'], display_map={'us':'us', 'se':'se'}),
+                widget.KeyboardLayout(configured_keyboards=['us','se', 'ee'], display_map={'us':'us', 'se':'se', 'ee' : 'ee'}),
                 #widget.QuickExit(),
             ],
             24,
