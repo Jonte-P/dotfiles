@@ -10,4 +10,4 @@ run "/usr/libexec/xfce-polkit"
 run "xfce4-power-manager"
 xset b off
 nitrogen --restore
-run "compton"
+run "xcompmgr"
