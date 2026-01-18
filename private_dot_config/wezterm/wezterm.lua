@@ -7,7 +7,7 @@ local config = wezterm.config_builder()
 -- This is where you actually specify your configuration options
 config.enable_scroll_bar = false
 config.enable_tab_bar = false
-config.enable_wayland = false
+config.enable_wayland = true
 --config.front_end = "WebGpu"
 --webgpu_force_fallback_adapter = true
 config.window_background_opacity = 0.75
