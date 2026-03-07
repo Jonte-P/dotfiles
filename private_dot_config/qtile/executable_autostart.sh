@@ -5,9 +5,10 @@ run() {
     "$@"&
   fi
 }
-run "/usr/bin/pipewire"
-run "/usr/libexec/xfce-polkit"
-run "xfce4-power-manager"
+#run "/usr/bin/pipewire"
+#run "/usr/libexec/xfce-polkit"
+#run "xfce4-power-manager"
 xset b off
-nitrogen --restore
-run "xcompmgr"
+#nitrogen --restore
+run "wpaperd"
+#run "xcompmgr"
