@@ -220,7 +220,11 @@ awful.screen.connect_for_each_screen(function(s)
             wibox.widget.systray(),
 	    battery_widget(),
 	    volume_widget(),
-	    brightness_widget(),
+	    brightness_widget{
+            type = 'icon_and_text',
+            program = 'brightnessctl',
+            step = 2,
+    }
             mytextclock,
             s.mylayoutbox,
         },
