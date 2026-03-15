@@ -19,7 +19,7 @@ local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 -- Volume widget
 local volume_widget = require("awesome-wm-widgets.pactl-widget.volume")
 -- Brightness widget
-local brightness_widget = require("awesome-wm-widgets.brigtness-widget.brightness")
+local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
