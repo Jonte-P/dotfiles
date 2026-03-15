@@ -224,7 +224,7 @@ awful.screen.connect_for_each_screen(function(s)
             type = 'icon_and_text',
             program = 'brightnessctl',
             step = 2,
-    }
+        },
             mytextclock,
             s.mylayoutbox,
         },
