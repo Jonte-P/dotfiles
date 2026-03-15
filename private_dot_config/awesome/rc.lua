@@ -18,6 +18,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 -- Volume widget
 local volume_widget = require("awesome-wm-widgets.pactl-widget.volume")
+-- Brightness widget
+local brightness_widget = require("awesome-wm-widgets.brigtness-widget.brightness")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -218,6 +220,7 @@ awful.screen.connect_for_each_screen(function(s)
             wibox.widget.systray(),
 	    battery_widget(),
 	    volume_widget(),
+	    brightness_widget(),
             mytextclock,
             s.mylayoutbox,
         },
@@ -245,6 +248,8 @@ globalkeys = gears.table.join(
     awful.key({}, "XF86AudioRaiseVolume", function () volume_widget:inc(5) end),
     awful.key({}, "XF86AudioLowerVolume", function () volume_widget:dec(5) end),
     awful.key({}, "XF86AudioMute", function () volume_widget:toggle() end),
+    awful.key({}, "XF86MonBrightnessUp", function () brightness_widget:inc() end),
+    awful.key({}, "XF86MonBrightnessDown", function () brightness_widget:dec() end),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
     awful.key({ modkey,           }, "j",
