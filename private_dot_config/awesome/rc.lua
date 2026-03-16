@@ -15,7 +15,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 -- Battery widget
-local battery_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 -- Volume widget
 local volume_widget = require("awesome-wm-widgets.pactl-widget.volume")
 -- Brightness widget
