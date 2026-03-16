@@ -15,7 +15,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 -- Battery widget
-local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+local battery_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 -- Volume widget
 local volume_widget = require("awesome-wm-widgets.pactl-widget.volume")
 -- Brightness widget
@@ -219,7 +219,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-	    battery_widget(),
+	    batteryarc_widget(),
 	    volume_widget(),
 	    brightness_widget{
             type = 'icon_and_text',
