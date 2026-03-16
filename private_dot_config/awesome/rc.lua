@@ -212,6 +212,7 @@ awful.screen.connect_for_each_screen(function(s)
             mylauncher,
             s.mytaglist,
             s.mypromptbox,
+	    s.mylayoutbox,
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
@@ -226,7 +227,7 @@ awful.screen.connect_for_each_screen(function(s)
             step = 2,
         },
             mytextclock,
-            s.mylayoutbox,
+--            s.mylayoutbox,
         },
 
 }
