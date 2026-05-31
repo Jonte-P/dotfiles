@@ -6,8 +6,9 @@ run() {
   fi
 }
 #run "/usr/bin/pipewire"
-#run "/usr/libexec/xfce-polkit"
-#run "xfce4-power-manager"
+run "/usr/bin/gentoo-pipewire-launcher"
+run "/usr/libexec/polkit-gnome-authentication-agent-1"
+run "xfce4-power-manager"
 xset b off
 #nitrogen --restore
 run "wpaperd"
